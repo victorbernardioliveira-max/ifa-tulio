@@ -3,146 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisica</title>
+    <title>Física - Movimento Circular</title>
     <style>
-      body{
+      body {
+        font-family: Arial, sans-serif;
         text-align: justify;
+        margin: 20px;
       }
-      h1{
+      
+      h1 {
         color: blue;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #003399;
+        margin-top: 0;
+      }
+
+      /* Container Principal em Flexbox */
+      .container {
+        display: flex;
+        gap: 20px; /* Espaço entre as duas colunas */
+      }
+
+      /* Estilização dos Blocos Laterais */
+      .bloco {
+        flex: 1; /* Faz as colunas dividirem o espaço igualmente */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+
+      /* Responsividade para telas menores */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
       }
     </style>
 </head>
 <body>
+
     <h1>Movimento Circular</h1>
-    <p>É o movimento de rotação de um corpo em torno de um eixo ao longo de uma trajetória circular de raio constante. Esse movimento pode ser uniforme, caso a velocidade de rotação seja constante, ou variado, caso sua velocidade sofra variações ao longo do tempo.</p>
-    <h2>Força e Aceleração Centrípeta</h2>
-    <p>É a força resultante que puxa um corpo para o centro de uma trajetória circular, mudando apenas a direção da velocidade e permitindo que o objeto faça curvas.</p>
-<p>Já a aceleração, é a grandeza física que muda a direção da velocidade de um corpo em movimento circular, apontando sempre para o centro da trajetória e tendo o seu valor calculado pelo quadrado da velocidade dividido pelo raio.</p>
-<p>Exemplos no Cotidiano:
-    <ul>
-   <li>Carros em curvas: O atrito dos pneus com o asfalto atua como força centrípeta.</li>     
-<li>Satélites na Terra: A gravidade é a força centrípeta que mantém a Lua e os satélites em órbita.</li>    
-<li>Máquina de lavar: O tambor gira e a parede do cesto empurra as roupas para o centro.</li>
-</ul></p>
-<h2>Fórmulas:</h2>
-<h3><b>Velocidade Angular</b></h3>
-<h3><math><mi>ω</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <mn>2</mn>
-      <mi>π</mi>
-    </mrow>
-    <mi>T</mi>
-  </mfrac>
-</math></h3>
-<h3>Velocidade Linear (Tangencial)</h3>
-<h3><math>
-<mi>v</mi>
-  <mo>=</mo>
-  <mi>ω</mi>
-  <mi>r</mi>
-</math></h3>
-<h3>Período</h3>
-<h3><math><mi>T</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mn>1</mn>
-    <mi>f</mi>
-  </mfrac>
-</math></h3>
-<h3>Frequência</h3>
-<h3><math>  <mi>f</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mn>1</mn>
-    <mi>T</mi>
-  </mfrac>
-</math></h3>
-<h3>Aceleração Centrípeta (Velocidade Linear)</h3>
-<h3><math>
-  <msub>
-    <mi>a</mi>
-    <mi>c</mi>
-  </msub>
-  <mo>=</mo>
-  <mfrac>
-    <msup>
-      <mi>v</mi>
-      <mn>2</mn>
-    </msup>
-    <mi>r</mi>
-  </mfrac>   
-</math></h3>
-<h3>Aceleração Centrípeta (em função da velocidade angular)</h3>
-<h3><math>
-    <msub>
-    <mi>a</mi>
-    <mi>c</mi>
-  </msub>
-  <mo>=</mo>
-  <msup>
-    <mi>ω</mi>
-    <mn>2</mn>
-  </msup>
-  <mi>r</mi>
-</math></h3>
-<h3>Força Centrípeta</h3>
-<h3><math>
-<msub>
-    <mi>F</mi>
-    <mi>c</mi>
-  </msub>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <mi>m</mi>
-      <msup>
-        <mi>v</mi>
-        <mn>2</mn>
-      </msup>
-    </mrow>
-    <mi>r</mi>
-  </mfrac>
-</math></h3>
-<h3>Força Centrípeta (em função da velocidade angular)</h3>
-<h3><math>
-    <msub>
-    <mi>F</mi>
-    <mi>c</mi>
-  </msub>
-  <mo>=</mo>
-  <mi>m</mi>
-  <msup>
-    <mi>ω</mi>
-    <mn>2</mn>
-  </msup>
-  <mi>r</mi>
-</math></h3>
-<h2>Fórmula da Força Centrípeta</h2>
-<p><ul>
-<li>A força centrípeta depende da massa, da velocidade e do raio da trajetória;</li>
-<li>Quanto maior a massa, maior a força;</li>
-<li>Quanto maior a velocidade, muito maior será a força;</li>
-<li>Quanto maior o raio, menor será a força necessária.</li>
-</p></ul>
-<h2>Exemple de exercício:</h2>
 
-<p>Um carro de 800 kg faz uma curva de raio 40 m com velocidade de 20 m/s.
+    <div class="container">
+      
+      <!-- Bloco Esquerdo: Teoria e Conceitos -->
+      <div class="bloco">
+        <h2>Conceito e Aplicações</h2>
+        <p>É o movimento de rotação de um corpo em torno de um eixo ao longo de uma trajetória circular de raio constante. Esse movimento pode ser uniforme, caso a velocidade de rotação seja constante, ou variado, caso sua velocidade sofra variações ao longo do tempo.</p>
+        
+        <h2>Força e Aceleração Centrípeta</h2>
+        <p>É a força resultante que puxa um corpo para o centro de uma trajetória circular, mudando apenas a direção da velocidade e permitindo que o objeto faça curvas.</p>
+        <p>Já a aceleração, é a grandeza física que muda a direção da velocidade de um corpo em movimento circular, apontando sempre para o centro da trajetória e tendo o seu valor calculado pelo quadrado da velocidade dividido pelo raio.</p>
+        
+        <h3>Exemplos no Cotidiano:</h3>
+        <ul>
+          <li><b>Carros em curvas:</b> O atrito dos pneus com o asfalto atua como força centrípeta.</li>     
+          <li><b>Satélites na Terra:</b> A gravidade é a força centrípeta que mantém a Lua e os satélites em órbita.</li>    
+          <li><b>Máquina de lavar:</b> O tambor gira e a parede do cesto empurra as roupas para o centro.</li>
+        </ul>
 
-<b>Resolução:</b>
+        <h2>Fórmula da Força Centrípeta (Análise)</h2>
+        <ul>
+          <li>A força centrípeta depende da massa, da velocidade e do raio da trajetória;</li>
+          <li>Quanto maior a massa, maior a força;</li>
+          <li>Quanto maior a velocidade, muito maior será a força;</li>
+          <li>Quanto maior o raio, menor será a força necessária.</li>
+        </ul>
 
-<b>Massa = 800 kg
-Velocidade = 20 m/s
-Raio = 40 m</b>
+        <h2>Curiosidades</h2>
+        <p>Quando um carro faz uma curva, parece que somos empurrados para fora. Na verdade, nosso corpo tende a continuar em linha reta por causa da inércia. A chamada força centrífuga é uma força aparente percebida por quem está no referencial em movimento.</p>
+      </div>
 
-Resultado: Força centrípeta = 8.000 N.
-</p>
-<h1>Curiosidades</h1>
-<h2>
-Quando um carro faz uma curva, parece que somos empurrados para fora. Na verdade, nosso corpo tende a continuar em linha reta por causa da inércia.
+      <!-- Bloco Direito: Fórmulas e Exercício -->
+      <div class="bloco">
+        <h2>Fórmulas</h2>
+        
+        <p><b>Velocidade Angular</b></p>
+        <math><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac></math>
 
-A chamada força centrífuga é uma força aparente percebida por quem está no referencial em movimento
-</h2>
+        <p><b>Velocidade Linear (Tangencial)</b></p>
+        <math><mi>v</mi><mo>=</mo><mi>ω</mi><mi>r</mi></math>
+
+        <p><b>Período</b></p>
+        <math><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mi>f</mi></mfrac></math>
+
+        <p><b>Frequência</b></p>
+        <math><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></math>
+
+        <p><b>Aceleração Centrípeta (Velocidade Linear)</b></p>
+        <math><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac></math>
+
+        <p><b>Aceleração Centrípeta (Velocidade Angular)</b></p>
+        <math><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mi>r</mi></math>
+
+        <p><b>Força Centrípeta</b></p>
+        <math><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></math>
+
+        <p><b>Força Centrípeta (Velocidade Angular)</b></p>
+        <math><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>r</mi></math>
+
+        <hr>
+
+        <h2>Exemplo de Exercício</h2>
+        <p>Um carro de 800 kg faz uma curva de raio 40 m com velocidade de 20 m/s.</p>
+        <p><b>Resolução:</b><br>
+        Massa = 800 kg<br>
+        Velocidade = 20 m/s<br>
+        Raio = 40 m</p>
+        <p><b>Resultado:</b> Força centrípeta = 8.000 N.</p>
+      </div>
+
+    </div>
+
+</body>
 </html>
